@@ -1,313 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Book Café</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>shopTena Online Shopping</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <section class="auth-section">
-      <div class="auth-container">
-        <button class="auth-btn" id="sign-in">Sign In</button>
-        <button class="auth-btn" id="sign-up">Sign Up</button>
-      </div>
-    </section>
-    <nav class="container nav">
-      <div class="logo">Book Café</div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Books</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Shop</a></li>
+      <li><a href="#">Deals</a></li>
+    </ul>
+    <div class="nav-logo">
+      <img src="https://img.icons8.com/color/48/000000/shopping-cart-loaded.png" alt="shopTena Logo" class="logo">
+      <span class="site-title">shopTena</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#">Orders</a></li>
+      <li><a href="#">Cart</a></li>
+      <li><a href="#">Account</a></li>
+      <li><a href="#">Contacts</a></li>
+    </ul>
+    <div class="nav-toggle" id="navToggle">&#9776;</div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Everything You Need, Delivered Fast!</h1>
+      <p>Welcome to <span class="highlight">shopTena</span> – your one-stop shop for electronics, fashion, beauty, home essentials, and more. Enjoy unbeatable deals and speedy delivery, every day!</p>
+      <a href="#" class="shop-btn">Shop Now</a>
+    </div>
+    <div class="hero-illustration">
+      <img src="https://img.freepik.com/free-vector/shopping-online-concept-illustration_114360-1084.jpg?w=400" alt="Shopping" />
+    </div>
   </header>
-  <section class="hero">
-    <div class="container">
-      <h1>Escape in a Cup & a Chapter</h1>
-      <p>Your cozy spot for specialty brews and literary adventures.</p>
-      <a href="#" class="btn">Explore Menu</a>
+
+  <section class="how-it-works-shoptena">
+    <div class="how-text">
+      <small>HOW IT WORKS</small>
+      <h2>We Help You Shop<br>Smarter & Easier</h2>
+      <p>
+        Browse thousands of products, add to cart in seconds, and enjoy fast, secure doorstep delivery.<br>
+        Start your seamless shopping journey with <b>shopTena</b> today!
+      </p>
+      <a href="#" class="how-btn">
+        Start Shopping
+      </a>
     </div>
-  </section>
-  <section class="about container">
-    <h2>We Brew Stories & Serve Joy</h2>
-    <p>Whether you're looking for a bold espresso or a relaxing read, our café is your happy place. Discover unique book collections while enjoying handcrafted drinks.</p>
-    <a href="#" class="btn-secondary">Read More</a>
-  </section>
-  <section class="specials container">
-    <h2>Today’s Brew Specials</h2>
-    <div class="special-items">
-      <div class="special-card">
-        <h3>Maple Cinnamon Latte</h3>
-        <p>Smooth espresso with steamed milk, maple syrup & a hint of cinnamon.</p>
-      </div>
-      <div class="special-card">
-        <h3>Lavender Earl Grey</h3>
-        <p>Delicately infused black tea with lavender & a touch of vanilla.</p>
-      </div>
-      <div class="special-card">
-        <h3>Spiced Hot Chocolate</h3>
-        <p>Rich cocoa with warm spices — perfect with your favorite novel!</p>
+    <div class="how-illustration">
+      <div class="how-img-card">
+        <img src="https://img.icons8.com/color/240/000000/online-shop.png" alt="shopTena Online Shopping" />
       </div>
     </div>
-  </section>
-  <div class="specials-cards">
-    <div class="card">
-      <h3>Caramel Latte</h3>
-      <p>Smooth espresso with steamed milk & caramel drizzle.</p>
-      <span class="price">$4.50</span>
-    </div>
-    <div class="card">
-      <h3>Mocha Magic</h3>
-      <p>Dark chocolate, espresso, and whipped cream delight.</p>
-      <span class="price">$5.00</span>
-    </div>
-    <div class="card">
-      <h3>Chai Escape</h3>
-      <p>Spiced tea with frothy milk — perfect for book lovers.</p>
-      <span class="price">$4.00</span>
-    </div>
-  </div>
-  
-  <section class="services container">
-    <h2>Our Bookish Delights</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Book Tastings</h3>
-        <p>Curated reads paired with your favorite drink.</p>
-      </div>
-      <div class="card">
-        <h3>Author Events</h3>
-        <p>Meet the minds behind the words in cozy evening sessions.</p>
-      </div>
-      <div class="card">
-        <h3>Quiet Reading Pods</h3>
-        <p>Unplug, unwind, and read in peace.</p>
-      </div>
-    </div>
-  </section>
-  <section class="testimonials container">
-    <h2>What Our Guests Say</h2>
-    <div class="testimonial-grid">
-      <div class="testimonial">
-        <p>A perfect blend of coffee and calm vibes. Books everywhere!</p>
-        <span>Avid Reader</span>
-      </div>
-      <div class="testimonial">
-        <p>The reading pods are magical. I could spend hours here</p>
-        <span>Coffee & Book Lover</span>
-      </div>
-    </div>
-  </section>
-  <section class="partners-section">
-    <h2>Our Book Partners</h2>
-    <div class="publishers">
-      <div class="publisher">
-        <img src="assets/literarylane.png" alt="Literary Lane Logo" />
-        <p>Literary Lane</p>
-      </div>
-      <div class="publisher">
-        <img src="assets/chapterhouse.png" alt="Chapter House Logo" />
-        <p>Chapter House</p>
-      </div>
-      <div class="publisher">
-        <img src="assets/boundpages.png" alt="Bound Pages Logo" />
-        <p>Bound Pages</p>
-      </div>
-      <div class="publisher">
-        <img src="assets/inkwellpress.png" alt="Inkwell Press Logo" />
-        <p>Inkwell Press</p>
-      </div>
-    </div>
-  </section>
-  <section class="resources container">
-    <h2>Resources for Your Bookish Soul</h2>
-    <div class="cards">
-      <div class="card">
-        <h3>Reading Lists</h3>
-        <section class="more-books">
-          <h2>More Great Reads</h2>
-          <div class="more-books-grid">
-            <div class="book-item">
-              <img src="assets/book1.jpg" alt="Book 1">
-              <p>The Pearl- by John Steinbeck</p>
-            </div>
-            <div class="book-item">
-              <img src="assets/book2.jpg" alt="Book 2">
-              <p>Blossoms of the Savannah-by Henry Ole Kulet</p>
-            </div>
-            <div class="book-item">
-              <img src="assets/book3.jpg" alt="Book 3">
-              <p>The River and the Source- by Margaret A.Ogola</p>
-            </div>
-          </div>
-        </section>
-        <p>Monthly curated lists by genre and mood.</p>
-      </div>
-      <div class="card">
-        <h3>Literary Workshops</h3>
-        <p>Join writing or reading sessions weekly.</p>
-        <section class="events container">
-          <h2>Upcoming Events</h2>
-          <ul class="event-list">
-            <li><strong>📚 Book Swap Sunday:</strong> May 12, 2025 – Bring a book, take a book!</li>
-            <li><strong>☕ Poetry & Brews:</strong> May 18, 2025 – Open mic poetry night with free mocha shots.</li>
-            <li><strong>🎙️ Author Hangout:</strong> May 25, 2025 – Meet Kenyan authors & get your books signed.</li>
-          </ul>
-        </section> 
-      </div>
-      <div class="card">
-        <section class="featured-publishers">
-          <h2>Featured Publishers</h2>
-          <div class="publishers">
-            <div class="publisher">
-              <img src="assets/publisher1.bmp" alt="Publisher One Logo" />
-              <p>Publisher One</p>
-            </div>
-            <div class="publisher">
-              <img src="assets/publisher2.bmp" alt="Publisher Two Logo" />
-              <p>Publisher Two</p>
-            </div>
-            <div class="publisher">
-              <img src="assets/publisher3.bmp" alt="Publisher Three Logo" />
-              <p>Publisher Three</p>
-            </div>
-            <div class="publisher">
-              <img src="assets/publisher4.bmp" alt="Publisher Four Logo" />
-              <p>Publisher Four</p>
-            </div>
-          </div>
-        </section>
-        
-        <h3>Book Club Signups</h3>
-        <p>Connect with fellow readers in your community.</p>
-      </div>
-    </div>
-  </section>
-  <section class="faq container">
-    <h2>Frequently Asked Questions</h2>
-    <details>
-      <summary>Do you need a membership to visit?</summary>
-      <p>No, all guests are welcome!</p>
-    </details>
-    <details>
-      <summary>Can I donate books?</summary>
-      <p>Yes, we love donations! Drop them at the front desk.</p>
-    </details>
-    <details>
-      <summary>Do you host book clubs?</summary>
-      <p>Yes! Check our calendar for upcoming events.</p>
-    </details>
   </section>
 
-  <section class="contact container">
-    <h2>We'd Love to Hear from You</h2>
-    <div class="contact-grid">
-      <div class="contact-info">
-        <p>Email: otumas18@gmail.com</p>
-        <p>Phone: +254 707315280</p>
-        <p>Location: Nairobi City, Kenya</p>
+
+  <section class="shoptena-path-section">
+    <small>SERVICES</small>
+    <h2>Your Path to Shopping Joy</h2>
+    <p>
+      Discover unbeatable deals, a huge variety of products, and fast, secure delivery.<br>
+      Shop smarter and enjoy a seamless experience with shopTena!
+    </p>
+  </section>
+
+
+  <section class="shoptena-services-cards">
+    <!-- Card 1 -->
+    <div class="service-card featured">
+      <div class="service-card-content">
+        <h3>All Categories</h3>
+        <p>
+          Discover electronics, fashion, groceries, and more-everything you need in one place.
+        </p>
+        <button class="learn-btn">Learn More</button>
       </div>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+      <div class="service-card-graphics">
+        <img src="https://img.icons8.com/color/48/000000/shopping-cart-loaded.png" class="heart-icon heart1" alt="ShopTena Cart"/>
+        <img src="https://img.icons8.com/color/48/000000/box--v1.png" class="heart-icon heart2" alt="Box"/>
+        <img src="https://img.icons8.com/color/48/000000/t-shirt.png" class="heart-icon heart3" alt="T-shirt"/>
+        <img src="https://img.icons8.com/color/48/000000/diamond.png" class="heart-icon heart4" alt="Diamond"/>
+      </div>
+    </div>
+    <!-- Card 2 -->
+    <div class="service-card">
+      <div class="service-card-content">
+        <h3>Personal Shopper</h3>
+        <p>
+          Get tailored recommendations and exclusive deals, just for you, from our shopping experts.
+        </p>
+        <button class="learn-btn">Learn More</button>
+      </div>
     </div>
   </section>
-<section class="book-collection container">
-  <h2>Featured Book Collection</h2>
-  <div class="book-grid">
-    <div class="book-item">
-      <img src="assets/book1.jpg" alt="The Pearl" />
-      <h3>The Pearl</h3>
-      <p>By John Steinbeck – A haunting tale of dreams, wealth, and human nature.</p>
-    </div>
-    <div class="book-item">
-      <img src="assets/book2.jpg" alt="Blossoms of the Savannah" />
-      <h3>Blossoms of the Savannah</h3>
-      <p>By Henry Ole Kulet – A moving story of culture, identity, and empowerment.</p>
-    </div>
-    <div class="book-item">
-      <img src="assets/book3.jpg" alt="The River and the Source" />
-      <h3>The River and the Source</h3>
-      <p>By Margaret Ogola – A generational story of strength, tradition, and transformation.</p>
-    </div>
-  </div>
-</section>
-<section class="testimonials container">
-  <h2>What Our Readers Say</h2>
-  <div class="testimonial-cards">
-    <div class="testimonial">
-      <p>"There’s no place quite like Book Café. It feels like home with every cup."</p>
-      <span>– Mercy K.</span>
-    </div>
-    <div class="testimonial">
-      <p>"From poetry readings to creamy lattes, it’s always magical here."</p>
-      <span>– Daniel M.</span>
-    </div>
-    <div class="testimonial">
-      <p>"A hidden gem for bookworms and coffee lovers alike!"</p>
-      <span>– Aisha L.</span>
-    </div>
-  </div>
-</section>
-<section class="publishers-section">
-  <h2>Our Trusted Publishers</h2>
-  <div class="publishers">
-    <div class="publisher">
-      <img src="assets/penguin.png" alt="Penguin Books Logo" />
-      <p>Penguin Books</p>
-    </div>
-    <div class="publisher">
-      <img src="assets/harpercollins.png" alt="HarperCollins Logo" />
-      <p>HarperCollins</p>
-    </div>
-    <div class="publisher">
-      <img src="assets/macmillan.png" alt="Macmillan Logo" />
-      <p>Macmillan</p>
-    </div>
-    <div class="publisher">
-      <img src="assets/randomhouse.png" alt="Random House Logo" />
-      <p>Random House</p>
-    </div>
-  </div>
-</section>
-<section class="testimonials container">
-  <h2>What Our Guests Say</h2>
-  <div class="testimonial-cards">
-    <div class="testimonial">
-      <p>"Book Café is my go-to place for coffee and calm. Their book selection is magical!"</p>
-      <span>- Amina W., Book Enthusiast</span>
-    </div>
-    <div class="testimonial">
-      <p>"A perfect blend of good vibes, great coffee, and inspiring reads!"</p>
-      <span>- Brian K., Freelance Writer</span>
-    </div>
-    <div class="testimonial">
-      <p>"Such a cozy corner in town! I never leave without a new favorite book."</p>
-      <span>- Faith M., University Student</span>
-    </div>
-  </div>
-</section>
-<section class="quote-banner">
-  <div class="quote-content">
-    <p>"A reader lives a thousand lives before he dies... The man who never reads lives only one." – George R.R. Martin</p>
-  </div>
-</section>
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Book Café. All rights reserved.</p>
-      <p>Follow us on 
-        <a href="#">Instagram</a> | 
-        <a href="#">Facebook</a> | 
-        <a href="#">Twitter</a>
+
+
+  <section class="shoptena-feature-card">
+    <div class="feature-card-content">
+      <h2>shopTena Personal Shopper</h2>
+      <p>
+        Enjoy a smarter way to shop! Get personalized recommendations, exclusive deals, and seamless delivery for all your needs-electronics, fashion, groceries, and more.
       </p>
+      <p>
+        Our shopTena experts help you discover the best products, save time, and make every purchase a delight.
+      </p>
+      <a href="#" class="feature-learn-btn">Learn More</a>
+    </div>
+    <div class="feature-card-illustration">
+      <img src="https://img.icons8.com/color/160/000000/shopping-cart-loaded.png" alt="shopTena Shopping" />
+    </div>
+  </section>
+
+
+  <section class="shoptena-testimonials">
+    <div class="testimonial-info">
+      <small>TESTIMONIALS</small>
+      <h2>What Our Shoppers Are Saying</h2>
+      <p>
+        Positive experiences from real shopTena users who love our deals, fast delivery, and customer service.
+      </p>
+      <div class="testimonial-arrows">
+        <button class="arrow-btn" id="arrowLeft" aria-label="Previous testimonials">&#8592;</button>
+        <button class="arrow-btn active" id="arrowRight" aria-label="Next testimonials">&#8594;</button>
+      </div>
+    </div>
+    <div class="testimonial-cards" id="testimonialCards">
+      <!-- Cards will be inserted by JS -->
+    </div>
+  </section>
+
+
+
+  <section class="shoptena-partners">
+    <div class="partners-bar">
+      <span class="partners-title">Our Partners</span>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Google-flutter-logo.svg" alt="Flutter" class="partner-logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" class="partner-logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" class="partner-logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/PHP_Logo.png" alt="PHP" class="partner-logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" alt="Express" class="partner-logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" alt="Sass" class="partner-logo">
+    </div>
+  </section>
+
+
+  <section class="shoptena-resources">
+    <small>EXPLORE & SHOP</small>
+    <h2>Discover More with shopTena</h2>
+    <p>
+      Explore top deals, exclusive categories, and personalized shopping experiences-all designed to make your shopping journey easier, faster, and more rewarding.
+    </p>
+    <div class="shoptena-resource-cards">
+      <div class="resource-card">
+        <h3>Top Deals & Offers</h3>
+        <p>
+          Find daily discounts, flash sales, and exclusive promotions on your favorite products.
+        </p>
+        <button class="explore-btn yellow">Explore</button>
+      </div>
+      <div class="resource-card">
+        <h3>Shop by Category</h3>
+        <p>
+          Browse electronics, fashion, groceries, and more-all in one place for your convenience.
+        </p>
+        <button class="explore-btn teal">Explore</button>
+      </div>
+      <div class="resource-card">
+        <h3>Personalized Picks</h3>
+        <p>
+          Get recommendations tailored just for you, based on your interests and shopping habits.
+        </p>
+        <button class="explore-btn pink">Explore</button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="shoptena-community">
+    <div class="content">
+      <p class="label">COMMUNITY</p>
+      <h2 class="headline">You're Not Shopping Alone Anymore</h2>
+      <p class="description">
+        Discover the best deals, share product reviews, and shop confidently on ShopTena.
+        From electronics to groceries, we deliver everything right to your door—fast, reliable, and hassle-free.
+      </p>
+      <button class="join-btn">Join the ShopTena Community</button>
+    </div>
+    <div class="illustration">
+        <img src="https://cdn-icons-png.flaticon.com/512/10404/10404205.png" alt="Online Shopping Illustration" />
+    </div>  
+  </section>
+
+
+  <section class="shoptena-faq">
+    <div class="faq-left">
+      <small>NEED HELP?</small>
+      <h2><strong>Frequently<br>Asked Questions</strong></h2>
+      <p>
+        Find answers to common questions about shopping, orders, delivery, and your shopTena experience.
+      </p>
+      <img src="https://img.icons8.com/color/240/000000/shopping-cart-loaded.png" alt="shopTena FAQ Illustration" class="faq-illustration">
+    </div>
+    <div class="faq-right">
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question">
+            How do I place an order on shopTena?
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            Simply browse products, add items to your cart, and proceed to checkout. Follow the prompts to complete your order securely.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            How fast is delivery?
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            Most orders are delivered within 24-72 hours, depending on your location. You can track your order in your account.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Can I return or exchange items?
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            Yes! If you're not satisfied, you can return or exchange eligible items within 7 days of delivery. See our Return Policy for details.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            What payment methods are accepted?
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            We accept mobile money, credit/debit cards, and cash on delivery in select areas.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            How do I contact shopTena support?
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            You can reach our support team 24/7 via live chat, email, or our toll-free hotline on the Contact Us page.
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Is my information secure on shopTena?
+            <span class="faq-toggle">+</span>
+          </button>
+          <div class="faq-answer">
+            Absolutely. We use advanced encryption and never share your data. Your privacy and security are our top priority.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <h3>GET IN TOUCH</h3>
+      <h1>We’re Here to Support You</h1>
+      <p>
+        Whether you have questions, need help getting started, or want to learn more — reach out anytime.
+      </p>
+  
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h2>Contact Details:</h2>
+          <p><strong>Email:</strong> <a href="mailto:otumas18@gmail.com">otumas18@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+254707315280">+254 707 315 280</a></p>
+          <p><strong>Address:</strong> Nairobi, Kenya</p>
+          <div class="social-icons">
+            <a href="https://wa.me/254707315280" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+  
+        <div class="contact-form">
+          <form action="https://formsubmit.co/otumas18@gmail.com" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+  
+            <!-- Optional hidden fields -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="shoptena-footer">
+    <div class="footer-left">
+      <h2>ShopTena</h2>
+      <ul class="footer-links">
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Best Deals</a></li>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <ul class="footer-socials">
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">TikTok</a></li>
+      </ul>
+      <ul class="footer-legal">
+        <li><a href="#">Terms & Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p class="footer-copy">&copy; 2025 ShopTena. All rights reserved.</p>
+    </div>
+  
+    <div class="footer-right">
+      <h3>Discover New Styles<br>Every Day</h3>
+      <p>Shop the latest trends in fashion, tech, and home essentials — all in one place.</p>
+      <a href="#" class="footer-button">Start Shopping</a>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+    </div>
+    <div class="footer-brand">
+      <img src="https://img.icons8.com/color/32/000000/shopping-cart-loaded.png" alt="shopTena Logo">
+      <span>shopTena &copy; 2025</span>
     </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
