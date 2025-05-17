@@ -1,4 +1,4 @@
-// Mobile nav toggle
+
 document.getElementById('navToggle').onclick = function() {
     document.querySelector('.nav-links').classList.toggle('open');
   };
@@ -50,7 +50,6 @@ document.getElementById('navToggle').onclick = function() {
   
   renderTestimonials();
 
-  // FAQ Accordion Logic
 document.querySelectorAll('.faq-question').forEach(btn => {
     btn.addEventListener('click', function() {
       const item = this.parentElement;
@@ -59,3 +58,53 @@ document.querySelectorAll('.faq-question').forEach(btn => {
       if (!open) item.classList.add('open');
     });
   });
+  
+  let currentLang = 'en';
+
+document.addEventListener('DOMContentLoaded', () => {
+  const langSwitcher = document.getElementById('languageSwitcher');
+  langSwitcher.addEventListener('change', (e) => {
+    currentLang = e.target.value;
+    updateContent(currentLang);
+  });
+
+  updateContent(currentLang); // default
+});
+
+function updateContent(lang) {
+  fetch('translations.json')
+    .then(res => res.json())
+    .then(translations => {
+      document.querySelectorAll('[data-i18n]').forEach(elem => {
+        const key = elem.getAttribute('data-i18n');
+        if (translations[lang][key]) {
+          elem.textContent = translations[lang][key];
+        }
+      });
+
+      // Date formatting
+      const date = new Date();
+      const formattedDate = new Intl.DateTimeFormat(lang, { dateStyle: 'full' }).format(date);
+      const dateElem = document.getElementById('date');
+      if (dateElem) dateElem.textContent = formattedDate;
+
+      // Currency formatting example (optional price)
+      const priceElem = document.getElementById('price');
+      if (priceElem) {
+        const formattedPrice = new Intl.NumberFormat(lang, {
+          style: 'currency',
+          currency: getCurrency(lang)
+        }).format(1299); // example price
+        priceElem.textContent = formattedPrice;
+      }
+    });
+}
+
+function getCurrency(lang) {
+  switch (lang) {
+    case 'sw': return 'KES';
+    case 'fr': return 'EUR';
+    case 'de': return 'EUR';
+    default: return 'USD';
+  }
+}

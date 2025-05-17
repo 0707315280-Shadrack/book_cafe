@@ -1,0 +1,68 @@
+{
+    "en": {
+      "headline": "Everything You Need, Delivered Fast!",
+      "description": "Welcome to shopTena – your one-stop shop for electronics, fashion, beauty, home essentials, and more.",
+      "startShopping": "Shop Now",
+      "priceLabel": "Price",
+      "dateLabel": "Date",
+      "orders": "Orders",
+      "cart": "Cart",
+      "account": "Account",
+      "contacts": "Contacts",
+      "home": "Home",
+      "shop": "Shop",
+      "deals": "Deals",
+      "productsAvailable": "Products Available",
+      "backHome": "← Back to Home"
+    },
+    "sw": {
+      "headline": "Kila Unachohitaji, Kinaletwa Haraka!",
+      "description": "Karibu shopTena – duka lako la kila kitu kama vifaa vya umeme, mitindo, urembo, mahitaji ya nyumbani na zaidi.",
+      "startShopping": "Nunua Sasa",
+      "priceLabel": "Bei",
+      "dateLabel": "Tarehe",
+      "orders": "Maagizo",
+      "cart": "Kikapu",
+      "account": "Akaunti",
+      "contacts": "Mawasiliano",
+      "home": "Nyumbani",
+      "shop": "Duka",
+      "deals": "Ofa",
+      "productsAvailable": "Bidhaa Zinazopatikana",
+      "backHome": "← Rudi Nyumbani"
+    },
+    "fr": {
+      "headline": "Tout ce dont vous avez besoin, livré rapidement!",
+      "description": "Bienvenue chez shopTena – votre boutique unique pour l’électronique, la mode, la beauté, les essentiels de la maison et plus encore.",
+      "startShopping": "Achetez Maintenant",
+      "priceLabel": "Prix",
+      "dateLabel": "Date",
+      "orders": "Commandes",
+      "cart": "Panier",
+      "account": "Compte",
+      "contacts": "Contacts",
+      "home": "Accueil",
+      "shop": "Boutique",
+      "deals": "Promotions",
+      "productsAvailable": "Produits Disponibles",
+      "backHome": "← Retour à l'accueil"
+    },
+    "de": {
+      "headline": "Alles, was Sie brauchen – schnell geliefert!",
+      "description": "Willkommen bei shopTena – Ihrem One-Stop-Shop für Elektronik, Mode, Beauty, Haushaltswaren und mehr.",
+      "startShopping": "Jetzt Einkaufen",
+      "priceLabel": "Preis",
+      "dateLabel": "Datum",
+      "orders": "Bestellungen",
+      "cart": "Warenkorb",
+      "account": "Konto",
+      "contacts": "Kontakte",
+      "home": "Startseite",
+      "shop": "Shop",
+      "deals": "Angebote",
+      "productsAvailable": "Verfügbare Produkte",
+      "backHome": "← Zurück zur Startseite"
+    }
+  }
+  
+  

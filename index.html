@@ -7,37 +7,54 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation Bar -->
+  
   <nav class="navbar">
     <ul class="nav-links">
       <li><a href="#">Home</a></li>
       <li><a href="#">Shop</a></li>
       <li><a href="#">Deals</a></li>
     </ul>
+  
     <div class="nav-logo">
       <img src="https://img.icons8.com/color/48/000000/shopping-cart-loaded.png" alt="shopTena Logo" class="logo">
       <span class="site-title">shopTena</span>
     </div>
+  
     <ul class="nav-links">
       <li><a href="#">Orders</a></li>
       <li><a href="#">Cart</a></li>
       <li><a href="#">Account</a></li>
       <li><a href="#">Contacts</a></li>
+      <li>
+        <select id="languageSwitcher" title="Change Language">
+          <option value="en">English</option>
+          <option value="sw">Swahili</option>
+          <option value="fr">Français</option>
+          <option value="de">Deutsch</option>
+        </select>
+      </li>
     </ul>
+  
     <div class="nav-toggle" id="navToggle">&#9776;</div>
   </nav>
-
-  <!-- Hero Section -->
+  
   <header class="hero">
     <div class="hero-content">
-      <h1>Everything You Need, Delivered Fast!</h1>
-      <p>Welcome to <span class="highlight">shopTena</span> – your one-stop shop for electronics, fashion, beauty, home essentials, and more. Enjoy unbeatable deals and speedy delivery, every day!</p>
-      <a href="#" class="shop-btn">Shop Now</a>
+      <h1 data-i18n="headline"></h1>
+      <p data-i18n="description"></p>
+    
+      <button class="shop-btn" data-i18n="startShopping" onclick="location.href='shop.html'"></button>
+      
+      <p><strong data-i18n="priceLabel"></strong>: <span id="price"></span></p>
+      <p><strong data-i18n="dateLabel"></strong>: <span id="date"></span></p>
     </div>
+  
     <div class="hero-illustration">
       <img src="https://img.freepik.com/free-vector/shopping-online-concept-illustration_114360-1084.jpg?w=400" alt="Shopping" />
     </div>
   </header>
+  
+      <a href="shop.html" id="startShopping" class="shop-btn">Shop Now</a>
 
   <section class="how-it-works-shoptena">
     <div class="how-text">
@@ -57,8 +74,6 @@
       </div>
     </div>
   </section>
-
-
   <section class="shoptena-products">
     <h2 class="section-title">Shop Our Best Deals</h2>
     <div class="product-grid">
@@ -91,9 +106,6 @@
       </div>
     </div>
   </section>
-  
-
-
   <section class="shoptena-path-section">
     <small>SERVICES</small>
     <h2>Your Path to Shopping Joy</h2>
@@ -102,8 +114,6 @@
       Shop smarter and enjoy a seamless experience with shopTena!
     </p>
   </section>
-
-
   <section class="shoptena-services-cards">
     <!-- Card 1 -->
     <div class="service-card featured">
@@ -132,8 +142,6 @@
       </div>
     </div>
   </section>
-
-
   <section class="shoptena-feature-card">
     <div class="feature-card-content">
       <h2>shopTena Personal Shopper</h2>
@@ -149,8 +157,6 @@
       <img src="https://img.icons8.com/color/160/000000/shopping-cart-loaded.png" alt="shopTena Shopping" />
     </div>
   </section>
-
-
   <section class="shoptena-testimonials">
     <div class="testimonial-info">
       <small>TESTIMONIALS</small>
@@ -164,12 +170,9 @@
       </div>
     </div>
     <div class="testimonial-cards" id="testimonialCards">
-      <!-- Cards will be inserted by JS -->
+      
     </div>
   </section>
-
-
-
   <section class="shoptena-partners">
     <div class="partners-bar">
       <span class="partners-title">Our Partners</span>
@@ -181,8 +184,6 @@
       <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Sass_Logo_Color.svg" alt="Sass" class="partner-logo">
     </div>
   </section>
-
-
   <section class="shoptena-resources">
     <small>EXPLORE & SHOP</small>
     <h2>Discover More with shopTena</h2>
@@ -213,9 +214,6 @@
       </div>
     </div>
   </section>
-
-
-
   <section class="shoptena-community">
     <div class="content">
       <p class="label">COMMUNITY</p>
@@ -230,8 +228,6 @@
         <img src="https://cdn-icons-png.flaticon.com/512/10404/10404205.png" alt="Online Shopping Illustration" />
     </div>  
   </section>
-
-
   <section class="shoptena-faq">
     <div class="faq-left">
       <small>NEED HELP?</small>
@@ -329,8 +325,6 @@
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
             <button type="submit">Send Message</button>
-  
-            <!-- Optional hidden fields -->
             <input type="hidden" name="_captcha" value="false">
             <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
           </form>
@@ -380,7 +374,6 @@
       <span>shopTena &copy; 2025</span>
     </div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
